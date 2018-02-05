@@ -4,3 +4,5 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/Samir0702/Basic_repo.git
 git push -u origin master
+
+Make some more changes to the local copy of your file and push them to GitHub
