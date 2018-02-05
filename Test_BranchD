@@ -1,0 +1,33 @@
+Step 2: Creating a branch
+The master branch should always work without errors. A branch of the master, called develop or production would be the branch you mainly work from.
+
+Create branches off from developfor fixes or features, and then push to the develop branch (Step 3).
+
+git checkout -b BRANCHNAME
+Move to different branches:
+
+git checkout OTHERBRANCHNAME
+Check your current branch:
+
+git branch
+Keep branch names descriptive. For example, "product-view" or "fix-login-password-error". When working with a team, you can add names to the branches "todd-product-view" or "nikki-fix-login-password-error". Always be aware of the branch you are working on, especially when merging or pushing updates.
+
+Step 3: Merging into the develop branch
+Before merging, grab all of the updates from the develop branch onto your own branch and resolve any conflicts.
+
+git pull origin develop
+Conflicts will be noted in the terminal. Open the noted local files to resolve the conflicts. Then, add, commit, and push to your branch. After resolving all conflicts, merge your branch into develop.
+
+git checkout develop
+git merge YOURBRANCH
+git push origin develop
+After merging, you can delete the local and remote version of your old branch.
+
+Step 4: Pushing to the master branch
+Once the develop branch is ready and working, merge the develop branch into the master, and push to GitHub. 
+Congratulations! You've just updated a new version of your master project!
+
+**Using GitHub as backlog/bug list:
+As you think of features or encounter bugs that are not directly impeding on your current work, add them to the list and keep moving on.
+Create custom labels, assign tasks to collaborators, and comment on issues/tasks.
+Examples of feature tasks (using the story model): "User should be able to...", "After clicking on a product, the user should see all products with category list." If a feature is huge, break it up into smaller pieces.
